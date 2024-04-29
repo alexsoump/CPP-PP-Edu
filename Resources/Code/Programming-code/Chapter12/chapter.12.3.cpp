@@ -71,4 +71,34 @@ class Pixel(){
             }
     };
 
+    class ImageData(){
+        private:
+            Vector<vector<Pixel>> Image;
+            int width;
+            int height;
+        public:
+            Vector<vector<Pixel>> get_img(){    //getters
+                return Image;
+            }
+            int get_wid(){
+                return width;
+            }
+            int get_hei(){
+                return height;
+            }
+            void set_img(Vector<vector<Pixel>> img){    //setters
+                Image = img;
+            }
+            void set_wid(int wid){
+                width = wid;
+            }
+            void set_hei(int hei){
+                hei = height;
+            }
+    
+    };
+    //constructor den exei
+
+}
+
 //------------------------------------------------------------------------------
