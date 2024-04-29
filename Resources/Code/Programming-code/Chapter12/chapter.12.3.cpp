@@ -99,6 +99,9 @@ class Pixel(){
     };
     //constructor den exei
 
+    Point tr(100,100);
+    Simple_window win(tr,ImageData.get_wid()*20+70,ImageData.get_hei()*20,"window");    //"window" should be ppm image name
+
 }
 
 //------------------------------------------------------------------------------
