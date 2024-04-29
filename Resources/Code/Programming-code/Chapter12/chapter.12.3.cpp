@@ -42,4 +42,33 @@ int main()
     win.wait_for_button();       // give control to the display engine
 }
 
+class Pixel(){
+        private:
+            int positionx;
+            int positiony;
+            vec3 color;
+        public:
+            int get_positionx(){    //getters
+                return positionx;
+            }
+            int get_positiony(){
+                return positiony;
+            }
+            vec3 get_color(){
+                return color;
+            }
+            void set_positionx(int new_posx){   //setters
+                positionx = new_posx;
+            }
+            void set_positiony(int new_posy){
+                positiony = new_posy;
+            }
+            void set_color(vec3 new_col){
+                color = new_col;
+            }
+            Pixel(int posx, int posy, vec3 col){
+                Pixel(int x, int y, vec3 col) : positionx(x), positiony(y), color(col) {}
+            }
+    };
+
 //------------------------------------------------------------------------------
